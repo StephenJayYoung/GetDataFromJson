@@ -1,0 +1,14 @@
+{
+    "Cats": [{
+        "Name": "Kitty1",
+        "Age": "10",
+        "Gender": "Male",
+        "Weight": "10 lbs",
+        "Description": "Description 1"},
+    {
+        "Name": "Kitty2",
+        "Age": "4",
+        "Gender": "Female",
+        "Weight": "8 lbs",
+        "Description": "Description 2"}]
+}​

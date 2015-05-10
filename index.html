@@ -10,18 +10,23 @@
 <body>
 <h2> Json Project!</h2>
 
+
+<!-- Termina command to run server: python -m SimpleHTTPServer -->
+
 <script>
 $.getJSON( "cats.json", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
   });
- 
+
   $( "<ul/>", {
     "class": "my-new-list",
     html: items.join( "" )
   }).appendTo( "body" );
+
 });
+  console.log($.getJSON);
 </script>
 
 

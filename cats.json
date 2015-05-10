@@ -1,18 +1,11 @@
 
+
+
 {
-    "films": [{
-        "label": "34",
-        "value": "34",
-        "currently_streaming": "1",
-        "full_streaming_url": "http://www.url.com",
-        "url": "http://www.url.com"},
-    {
-        "label": "A Different Color",
-        "value": "A Different Color",
-        "currently_streaming": "1",
-        "full_streaming_url": "http://www.url.php",
-        "url": "http://www.url.com"}]
-}​
+  "one": "One cat",
+  "two": "Two Cat",
+  "three": "Three Cats"
+}
 
 
 

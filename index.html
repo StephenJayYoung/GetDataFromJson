@@ -2,40 +2,29 @@
 <html>
 <head>
 	<title>Json Project!</title>
-
 	 		<!-- jQuery -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 
 </head>
 <body>
 <h2> Json Project!</h2>
 
 <script>
-$(document).ready(function(){
-    $.ajax({
-        dataType: 'json',
-        beforeSend : function() {
-           console.log('Before Ajax Request Starts !!');
-        },
-        success: function(data) {
-            console.log(data);
-            alert("Edddddddd");
-            $.each(data.films, function(i, object) {
-            $.each(object, function(property, value) {
-            alert(property + "=" + value);
-    });
-});
-        },
-        error : function(jqXHR, textStatus, errorThrown) {
-             alert("Error occurred: " + errorThrown);
-        },
-         beforeSend : function() {
-           console.log('Ajax Request Complete  !!');
-        },
-        url: 'test.php'
-    });  
+$.getJSON( "cats.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
 });
 </script>
+
+
 
 </body>
 </html>
